@@ -45,6 +45,24 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.7rem;
       letter-spacing: 0.03em;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      letter-spacing: 0.03em;
+    }
+
+    .logo-subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem;
+      font-style: italic;
+      color: rgba(78, 74, 70, 0.6);
+      margin-top: 3px;
+      opacity: 0.7;
     }
 
     .nav-link {
@@ -90,6 +108,31 @@
       font-size: 0.95rem;
       padding: 3rem 0 4rem;
     }
+
+    footer a {
+      color: inherit;
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+
+    footer a:hover {
+      opacity: 1;
+    }
+
+    body {
+      animation: fadeInPage 0.5s ease;
+    }
+
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -97,7 +140,11 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Between Wildflowers</a>
+
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-main">Between Wildflowers</span>
+        <span class="logo-subtitle">a place to pause</span>
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -108,7 +155,6 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="poetry.html">Poetry</a></li>
           <li class="nav-item"><a class="nav-link" href="whispers.html">Whispers</a></li>
-          <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
           <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -153,10 +199,11 @@
   <!-- Footer -->
   <footer class="container text-center">
     <div class="footer-note mb-2">
-      You can come in. Take your time.
+      This moment. Here.
     </div>
 
     <div class="footer-note" style="font-size: 0.85rem; opacity: 0.7;">
+      If you’re looking for my books, they’re <a href="https://katedeluniere.com/">here</a>.<br><br>
       © 2026 Between Wildflowers<br>
       Written somewhere in-between
     </div>
